@@ -8,12 +8,13 @@ chmod +x miniconda.sh
 echo 'export PATH="/home/vagrant/miniconda/bin:$PATH"' >> /home/vagrant/.bashrc
 source /home/vagrant/.bashrc
 chown -R vagrant:vagrant /home/vagrant/miniconda
+
 # setting up ssh forwarding
-mkdir -p ~/.ssh
-chmod 700 ~/.ssh
+# mkdir -p ~/.ssh
+# chmod 700 ~/.ssh
 # experiment using keyscan to push ssh keys to vagrant box
-ssh-keyscan -H github.com >> ~/.ssh/known_hosts
-ssh -T git@github.com
+# ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+# ssh -T git@github.com
 
 # git clone voila hello world example
 

@@ -8,5 +8,5 @@ Vagrant.configure(2) do |config|
   # networking through Vagrant
   config.vm.network :forwarded_port, guest: 80, host: 4567
   # configure to use host machine ssh keys
-  config.ssh.forward_agent = true
+  # config.ssh.forward_agent = true
 end
